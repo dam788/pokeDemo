@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+body {
+  width: 100%;
+  height: 100%; }
+  body .container {
+    margin: 20px; }
+    body .container .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-perspective-origin: center;
+              perspective-origin: center;
+      -webkit-perspective: 0px;
+              perspective: 0px; }
+      body .container .row .carta {
+        position: relative;
+        width: 85px;
+        height: 85px;
+        margin: 5px;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform .3s;
+        transition: -webkit-transform .3s;
+        transition: transform .3s;
+        transition: transform .3s, -webkit-transform .3s;
+        -webkit-transition: transform .3s;
+        -moz-transition: transform .3s;
+        -ms-transition: transform .3s;
+        -o-transition: transform .3s; }
+        @media (max-width: 418px) {
+          body .container .row .carta {
+            width: 65px;
+            height: 65px;
+            margin: 3px; } }
+        body .container .row .carta .front, body .container .row .carta .back {
+          width: 100%;
+          position: absolute;
+          backface-visibility: hidden;
+          -webkit-backface-visibility: hidden; }
+        body .container .row .carta .front {
+          transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+          -ms-transform: rotateY(180deg);
+          -o-transform: rotateY(180deg); }
+        body .container .row .carta:hover {
+          transform: scale(1.1);
+          -webkit-transition: -webkit-transform .2s;
+          transition: -webkit-transform .2s;
+          transition: transform .2s;
+          transition: transform .2s, -webkit-transform .2s;
+          -webkit-transition: transform .2s;
+          -moz-transition: transform .2s;
+          -ms-transition: transform .2s;
+          -o-transition: transform .2s;
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          -o-transform: scale(1.1); }
+        body .container .row .carta.clickeado {
+          transition: all .5s ease;
+          -webkit-transition: all .5s ease;
+          -moz-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          -o-transition: all .5s ease;
+          transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+          -ms-transform: rotateY(180deg);
+          -o-transform: rotateY(180deg); }
+
+/*# sourceMappingURL=style.css.map */
